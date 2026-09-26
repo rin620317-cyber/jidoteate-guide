@@ -194,7 +194,7 @@ footer a{color:var(--ink-soft)}
     <div class="tile"><div class="k">届出を忘れると</div><div><div class="v num" id="mMiss" style="color:var(--warn)">—</div><div class="d minus num">2033〜2036年度</div></div></div>
   </div>
   <div class="grid-wrap"><table class="heat" id="heat"></table></div>
-  <p class="note">マスの数字は<b>1か月あたりの金額（万円）</b>。色が濃いほど多い。下の小さい字はその年度の学年。<br>表は横にスクロールできます。</p>
+  <p class="note">マスの数字は<b>1か月あたりの金額（万円）</b>。色が濃いほど多い。下の小さい字はその年度の学年（「2→3歳」はその年度中に3歳になるという意味）。<br>表は横にスクロールできます。</p>
   <h3 style="font-size:1.05rem;margin:22px 0 8px">忘れてはいけない日</h3>
   <ol class="steps" id="mineSteps"></ol>
 </section>
@@ -248,7 +248,7 @@ footer a{color:var(--ink-soft)}
 </section>
 
 <section>
-  <h2><span class="no">4</span>例：いま12歳・10歳・3歳の3人きょうだいの家庭</h2>
+  <h2><span class="no">4</span>例：いま小6・小4・2歳の3人きょうだいの家庭</h2>
   <p class="sub">これからの16年間（2026〜2041年度）に受け取る児童手当を、3つの場合で比べました。</p>
   <div class="tiles">
     <div class="tile"><div class="k"><i style="background:var(--s-old)"></i>もし改正がなかったら</div><div><div class="v num" id="tOld">—</div></div></div>
@@ -338,7 +338,7 @@ footer a{color:var(--ink-soft)}
   }
 
   /* ── 例の家庭の計算 ── */
-  const KIDS = [2014, 2016, 2023];               // 生まれた年度（今 12歳・10歳・3歳）
+  const KIDS = [2014, 2016, 2023];               // 生まれた年度（2026年度に 小6・小4・2歳→3歳）
   function oldRule(fy){                            // 改正前：中学生まで／第3子は小学生まで1.5万／数えるのは18歳年度末まで
     const c = KIDS.filter(b => fy>=b && fy<=b+18); let t = 0;
     KIDS.forEach(b=>{ const a = fy-b; if(a<0 || a>15) return;
@@ -385,7 +385,7 @@ footer a{color:var(--ink-soft)}
     document.getElementById('mineTitle').innerHTML = '我が家の場合<span style="white-space:nowrap">（' + N.join('・') + '）</span>';
 
     const grade = (fy, b) => { const a = fy-b;
-      if(a<=3) return a+'歳'; if(a<=6) return ['年少','年中','年長'][a-4];
+      if(a<=0) return '0歳'; if(a<=3) return (a-1)+'→'+a+'歳'; if(a<=6) return ['年少','年中','年長'][a-4];
       if(a<=12) return '小'+(a-6); if(a<=15) return '中'+(a-12); if(a<=18) return '高'+(a-15);
       if(a<=22) return '大'+(a-18); return '社会人'; };
     const monthly = (fy, idx, countTo) => {          // その子の月額
