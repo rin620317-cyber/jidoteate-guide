@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>児童手当 2024年の改正</title>
+<meta name="description" content="2024年10月に児童手当が大きく変わりました。所得制限の撤廃、高校生までの延長、第3子は月3万円、そして『第3子の数え方』。いちばん誤解されやすい点を、図とグラフでまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="児童手当は2024年10月から大きく変わりました">
+<meta property="og:description" content="所得制限なし・高校生まで・第3子は月3万円。上の子が大学生の年代でも『3人目』として数えられます（届出が必要）。">
+<meta property="og:image" content="https://rin620317-cyber.github.io/jidoteate-guide/og.png">
+<meta property="og:url" content="https://rin620317-cyber.github.io/jidoteate-guide/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F6F4EF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F4EF; --surface:#FFFFFF; --surface-2:#EFECE4;
+  --ink:#1F2421; --ink-soft:#4F5751; --ink-faint:#7A817B;
+  --line:#DDD8CC; --line-strong:#C7C0B0;
+  --accent:#9A4A22; --accent-soft:#F6E4D8;
+  --ok:#0F7A55; --ok-soft:#DDF1E8;
+  --warn:#A34A0B; --warn-soft:#FBE7D6;
+  --s-old:#2a78d6; --s-new:#1baf7a; --s-miss:#eb6834;
+  --grid:rgba(31,36,33,.08);
+  --shadow:0 1px 2px rgba(31,36,33,.05), 0 10px 26px -14px rgba(31,36,33,.22);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141614; --surface:#1C1F1C; --surface-2:#252925;
+    --ink:#ECEFEA; --ink-soft:#B6BDB5; --ink-faint:#899087;
+    --line:#333833; --line-strong:#454B44;
+    --accent:#EBA37D; --accent-soft:#3A271C;
+    --ok:#6FD3AC; --ok-soft:#18332A;
+    --warn:#F3A56B; --warn-soft:#3A2517;
+    --s-old:#3987e5; --s-new:#199e70; --s-miss:#d95926;
+    --grid:rgba(236,239,234,.08);
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 14px 30px -16px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141614; --surface:#1C1F1C; --surface-2:#252925;
+  --ink:#ECEFEA; --ink-soft:#B6BDB5; --ink-faint:#899087;
+  --line:#333833; --line-strong:#454B44;
+  --accent:#EBA37D; --accent-soft:#3A271C;
+  --ok:#6FD3AC; --ok-soft:#18332A;
+  --warn:#F3A56B; --warn-soft:#3A2517;
+  --s-old:#3987e5; --s-new:#199e70; --s-miss:#d95926;
+  --grid:rgba(236,239,234,.08);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"BIZ UDPGothic","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+  font-size:17px;line-height:1.9;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Shippori Mincho","Noto Serif JP",serif;margin:0;text-wrap:balance;color:var(--ink)}
+a{color:var(--accent)}
+.num{font-variant-numeric:tabular-nums}
+.page{max-width:720px;margin:0 auto;padding:0 16px 80px}
+
+/* header */
+header{padding:34px 0 18px}
+.kicker{display:inline-block;font-size:.8rem;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:3px 12px;margin-bottom:12px}
+h1{font-size:clamp(1.55rem,6.2vw,2.1rem);line-height:1.45}
+.lead{margin:14px 0 0;color:var(--ink-soft)}
+.date{font-size:.8rem;color:var(--ink-faint);margin-top:10px}
+
+/* summary */
+.sum{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 18px 8px;box-shadow:var(--shadow);margin:8px 0 30px}
+.sum h2{font-size:1.1rem;margin-bottom:8px}
+.sum ol{margin:0;padding-left:1.3em}
+.sum li{margin-bottom:10px}
+.sum b{color:var(--accent)}
+
+section{margin:40px 0}
+section > h2{font-size:1.3rem;line-height:1.5;margin-bottom:6px}
+section > h2 .no{display:inline-flex;align-items:center;justify-content:center;width:1.7em;height:1.7em;border-radius:50%;background:var(--accent);color:var(--bg);font-family:"BIZ UDPGothic",sans-serif;font-size:.8rem;margin-right:8px;vertical-align:.15em}
+.sub{color:var(--ink-soft);margin:0 0 14px}
+
+/* change cards */
+.cards{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 16px 14px;box-shadow:var(--shadow)}
+.card h3{font-size:1.05rem;margin-bottom:8px;font-family:"BIZ UDPGothic",sans-serif}
+.ba{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:stretch}
+.ba .b,.ba .a{border-radius:12px;padding:10px 12px;font-size:.92rem;line-height:1.6}
+.ba .b{background:var(--surface-2);color:var(--ink-soft)}
+.ba .a{background:var(--ok-soft);color:var(--ink)}
+.ba .a b{color:var(--ok)}
+.ba .t{font-size:.7rem;font-weight:700;letter-spacing:.06em;display:block;margin-bottom:2px;color:var(--ink-faint)}
+.ba .a .t{color:var(--ok)}
+.ba .arr{display:flex;align-items:center;color:var(--ink-faint);font-size:1.2rem}
+
+/* table */
+.tbl{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:.95rem}
+.tbl th,.tbl td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:center}
+.tbl th{background:var(--surface-2);font-size:.82rem;color:var(--ink-soft)}
+.tbl td:first-child{text-align:left;font-weight:700}
+.tbl .up{color:var(--ok);font-weight:700}
+.tbl tr:last-child td{border-bottom:none}
+.note{font-size:.8rem;color:var(--ink-faint);margin-top:8px;line-height:1.7}
+
+/* ruler */
+.ruler{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 12px 10px;box-shadow:var(--shadow)}
+.ruler svg{display:block;width:100%;height:auto}
+.callout{border-radius:14px;padding:14px 16px;margin-top:14px;line-height:1.8}
+.callout.warn{background:var(--warn-soft);border:1px solid color-mix(in srgb,var(--warn) 30%,transparent)}
+.callout.warn b{color:var(--warn)}
+.callout.ok{background:var(--ok-soft);border:1px solid color-mix(in srgb,var(--ok) 28%,transparent)}
+.callout.ok b{color:var(--ok)}
+
+/* example */
+.tiles{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:0 0 14px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 10px;text-align:center}
+.tile .k{font-size:.75rem;color:var(--ink-soft);line-height:1.4;display:flex;align-items:center;justify-content:center;gap:6px}
+.tile .k i{width:10px;height:10px;border-radius:3px;flex:none}
+.tile .v{font-size:1.4rem;font-weight:700;margin-top:4px}
+.tile .d{font-size:.75rem;margin-top:2px;font-weight:700}
+.tile .d.plus{color:var(--ok)}.tile .d.minus{color:var(--warn)}
+@media(max-width:480px){ .tiles{grid-template-columns:1fr} .tile{display:flex;justify-content:space-between;align-items:center;text-align:left} .tile .v{margin-top:0} }
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 8px 8px;box-shadow:var(--shadow);position:relative}
+.chart .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.78rem;color:var(--ink-soft);padding:0 8px 6px}
+.chart .legend span{display:inline-flex;align-items:center;gap:6px}
+.chart .legend i{width:16px;height:3px;border-radius:2px;display:inline-block}
+#chart{display:block;width:100%;touch-action:pan-y}
+.tip{position:absolute;pointer-events:none;display:none;background:var(--surface);border:1px solid var(--line-strong);border-radius:10px;padding:8px 10px;font-size:.78rem;line-height:1.6;box-shadow:var(--shadow);white-space:nowrap;z-index:5}
+.tip .r{display:flex;align-items:center;gap:6px}
+.tip i{width:8px;height:8px;border-radius:2px;display:inline-block}
+details{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+details summary{cursor:pointer;font-size:.88rem;color:var(--ink-soft)}
+details .tbl{margin-top:8px;font-size:.82rem}
+details .tbl td{text-align:right;padding:6px 6px}
+
+/* 我が家のヒートマップ（月額） */
+#mine{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 14px 16px;box-shadow:var(--shadow)}
+#mine > h2 .no{background:var(--ok)}
+.grid-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px}
+.heat{border-collapse:separate;border-spacing:0;font-size:.82rem;min-width:100%}
+.heat th,.heat td{padding:6px 4px;text-align:center;white-space:nowrap}
+.heat th{font-size:.72rem;color:var(--ink-faint);font-weight:600;background:var(--surface-2)}
+.heat th:first-child,.heat td:first-child{position:sticky;left:0;z-index:2;background:var(--surface);text-align:left;padding-left:10px;padding-right:10px;font-weight:700;border-right:1px solid var(--line)}
+.heat th:first-child{background:var(--surface-2)}
+.heat td.c{min-width:44px;border-left:2px solid var(--surface)}
+.heat td.c .m{display:block;font-weight:700;font-size:.92rem;line-height:1.3}
+.heat td.c .g{display:block;font-size:.64rem;opacity:.8;line-height:1.2}
+.heat tr.tot td{border-top:1px solid var(--line);font-weight:700;background:var(--surface-2)}
+.heat tr.tot td:first-child{background:var(--surface-2)}
+.heat col.now, .heat td.now, .heat th.now{outline:2px solid var(--accent);outline-offset:-2px}
+
+/* faq */
+.faq{display:flex;flex-direction:column;gap:10px}
+.qa{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.qa .q{font-weight:700;margin-bottom:6px}
+.qa .q::before{content:"Q. ";color:var(--accent)}
+.qa .a{color:var(--ink-soft)}
+.qa .a::before{content:"A. ";color:var(--ok);font-weight:700}
+
+/* steps */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px 12px 52px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--bg);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.85rem}
+
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink-faint);line-height:1.8}
+footer a{color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <span class="kicker">2024年10月から</span>
+  <h1>児童手当が大きく変わりました</h1>
+  <p class="lead">ニュースでは「所得制限がなくなった」「高校生までもらえる」が話題になりましたが、<b>もう一つ、あまり知られていない大事な変更</b>があります。それが「<b>第3子の数え方</b>」です。</p>
+  <div class="date">まとめ：2026年9月 ／ 出典は一番下にあります</div>
+</header>
+
+<div class="sum">
+  <h2>3行でいうと</h2>
+  <ol>
+    <li><b>所得に関係なく</b>、<b>高校生まで</b>もらえるようになった</li>
+    <li><b>3人目以降は月3万円</b>（前は1万5千円）</li>
+    <li>上の子が<b>大学生の年代（22歳の年度末）まで「人数」に数えてもらえる</b>。ただし<b>届出が必要</b>で、出さないと3人目の手当が下がる</li>
+  </ol>
+</div>
+
+<!-- 家族向け：リンクの # 以降に名前があるときだけ表示（名前はページにもサーバーにも残らない） -->
+<section id="mine" hidden>
+  <h2><span class="no">★</span><span id="mineTitle">我が家の場合</span></h2>
+  <p class="sub">生まれた年から、これから毎年いくら受け取れるかを計算しました（届出をきちんと出した場合）。</p>
+  <div class="tiles">
+    <div class="tile"><div class="k">これから受け取る総額</div><div><div class="v num" id="mTotal">—</div><div class="d num" id="mTotalSub" style="color:var(--ink-faint)"></div></div></div>
+    <div class="tile"><div class="k">いまの月額</div><div><div class="v num" id="mNow">—</div><div class="d num" id="mNowSub" style="color:var(--ink-faint)"></div></div></div>
+    <div class="tile"><div class="k">届出を忘れると</div><div><div class="v num" id="mMiss" style="color:var(--warn)">—</div><div class="d minus num">2033〜2036年度</div></div></div>
+  </div>
+  <div class="grid-wrap"><table class="heat" id="heat"></table></div>
+  <p class="note">マスの数字は<b>1か月あたりの金額（万円）</b>。色が濃いほど多い。下の小さい字はその年度の学年。<br>表は横にスクロールできます。</p>
+  <h3 style="font-size:1.05rem;margin:22px 0 8px">忘れてはいけない日</h3>
+  <ol class="steps" id="mineSteps"></ol>
+</section>
+
+<section>
+  <h2><span class="no">1</span>変わった5つのこと</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>① 所得制限</h3>
+      <div class="ba"><div class="b"><span class="t">改正前</span>収入が多いと減額・支給なし</div><div class="arr">→</div><div class="a"><span class="t">改正後</span><b>制限なし</b>。全員が満額</div></div>
+    </div>
+    <div class="card">
+      <h3>② もらえる期間</h3>
+      <div class="ba"><div class="b"><span class="t">改正前</span>中学生まで</div><div class="arr">→</div><div class="a"><span class="t">改正後</span><b>高校生の年代まで</b>（18歳の年度末）</div></div>
+    </div>
+    <div class="card">
+      <h3>③ 3人目以降の金額</h3>
+      <div class="ba"><div class="b"><span class="t">改正前</span>月1万5千円（小学生まで）</div><div class="arr">→</div><div class="a"><span class="t">改正後</span><b>月3万円</b>（0歳〜高校生）</div></div>
+    </div>
+    <div class="card">
+      <h3>④ 「3人目」の数え方 <span style="color:var(--accent)">← ここが知られていない</span></h3>
+      <div class="ba"><div class="b"><span class="t">改正前</span>上の子が<b>高校を卒業すると数から外れる</b></div><div class="arr">→</div><div class="a"><span class="t">改正後</span>上の子が<b>22歳の年度末まで</b>数に入る（親が生活費を負担している場合・届出が必要）</div></div>
+    </div>
+    <div class="card">
+      <h3>⑤ 振り込みの回数</h3>
+      <div class="ba"><div class="b"><span class="t">改正前</span>年3回（4か月分ずつ）</div><div class="arr">→</div><div class="a"><span class="t">改正後</span><b>年6回</b>（偶数月に2か月分ずつ）</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">2</span>1人あたりの月額</h2>
+  <table class="tbl">
+    <tr><th>子どもの年齢</th><th>1人目・2人目</th><th>3人目以降</th></tr>
+    <tr><td>0〜2歳</td><td class="num">1万5千円</td><td class="num up">3万円</td></tr>
+    <tr><td>3歳〜小学生</td><td class="num">1万円</td><td class="num up">3万円</td></tr>
+    <tr><td>中学生</td><td class="num">1万円</td><td class="num up">3万円</td></tr>
+    <tr><td>高校生の年代</td><td class="num up">1万円</td><td class="num up">3万円</td></tr>
+  </table>
+  <p class="note">緑の字が改正で増えたところ。高校生の年代は、改正前は支給なしでした。</p>
+</section>
+
+<section>
+  <h2><span class="no">3</span>いちばん誤解されやすい「3人目の数え方」</h2>
+  <p class="sub">「上の子が19歳になったら、子どもは2人と数えられる」——<b>これは改正前のルール</b>です。</p>
+  <div class="ruler" role="img" aria-label="年齢の目盛りで、手当がもらえる期間と、人数に数えられる期間を比べた図">
+    <svg id="ruler" viewBox="0 0 680 280" preserveAspectRatio="xMidYMid meet"></svg>
+  </div>
+  <div class="callout ok"><b>上の子が大学生の年代でも、親が生活費を出していれば「1人」として数えられます。</b>進学していなくても、親が生活を支えていれば対象になり得ます。就職して独立していたら数えられません。</div>
+  <div class="callout warn"><b>ただし、自動では数えてもらえません。</b>上の子が高校を卒業するタイミングで、住んでいる市区町村に届出（「監護相当・生計費の負担についての確認書」など）を出す必要があります。<b>届け出た翌月分からの適用で、さかのぼっては払われません。</b></div>
+</section>
+
+<section>
+  <h2><span class="no">4</span>例：いま12歳・10歳・3歳の3人きょうだいの家庭</h2>
+  <p class="sub">これからの16年間（2026〜2041年度）に受け取る児童手当を、3つの場合で比べました。</p>
+  <div class="tiles">
+    <div class="tile"><div class="k"><i style="background:var(--s-old)"></i>もし改正がなかったら</div><div><div class="v num" id="tOld">—</div></div></div>
+    <div class="tile"><div class="k"><i style="background:var(--s-new)"></i>改正後・届出あり</div><div><div class="v num" id="tNew">—</div><div class="d plus num" id="dNew"></div></div></div>
+    <div class="tile"><div class="k"><i style="background:var(--s-miss)"></i>改正後・届出を忘れた</div><div><div class="v num" id="tMiss">—</div><div class="d minus num" id="dMiss"></div></div></div>
+  </div>
+  <div class="chart">
+    <div class="legend">
+      <span><i style="background:var(--s-old)"></i>もし改正がなかったら</span>
+      <span><i style="background:var(--s-new)"></i>改正後・届出あり</span>
+      <span><i style="background:var(--s-miss)"></i>改正後・届出を忘れた</span>
+    </div>
+    <svg id="chart" height="300" aria-label="年度ごとの児童手当の年額の推移（3つの場合）" role="img"></svg>
+    <div class="tip" id="tip"></div>
+  </div>
+  <p class="note">グラフを指でなぞると、その年度の金額が出ます。<br>
+  オレンジの線が緑から離れる<b>2033〜2036年度</b>が、届出を忘れると損をする期間です（上の2人が高校を卒業した後）。</p>
+  <details>
+    <summary>年度ごとの数字を表で見る</summary>
+    <table class="tbl" id="dataTbl"></table>
+  </details>
+  <p class="note">※所得制限にかからない家庭として計算。年齢は「その年度に何歳になるか」で区切った目安です。上の2人は高校卒業後も親が生活費を負担している（届出あり）前提。</p>
+</section>
+
+<section>
+  <h2><span class="no">5</span>よくある勘違い</h2>
+  <div class="faq">
+    <div class="qa"><div class="q">上の子が19歳になったら、3人目の手当は減る？</div><div class="a">改正後は、上の子が<b>22歳の年度末まで</b>人数に入るので、届出をしていれば減りません。</div></div>
+    <div class="qa"><div class="q">大学に行っていないと数えてもらえない？</div><div class="a">大学生である必要はありません。親が生活の面倒を見て、生活費の多くを負担していれば対象になり得ます。</div></div>
+    <div class="qa"><div class="q">収入が高い家は相変わらずもらえない？</div><div class="a">所得制限はなくなりました。どの家庭も同じ金額です。</div></div>
+    <div class="qa"><div class="q">年に3回まとめて振り込まれる？</div><div class="a">2024年12月から<b>年6回・偶数月</b>（2か月分ずつ）に変わりました。</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">6</span>忘れないための手順</h2>
+  <ol class="steps">
+    <li><b>上の子が高校3年生の冬</b>に、市区町村の子育て窓口に「高校卒業後も数に入れたい」と相談する</li>
+    <li>「監護相当・生計費の負担についての確認書」と「額改定認定請求書・額改定届」を出す（名前は自治体で少し違うことがあります）</li>
+    <li><b>2人目が高校を卒業するときも、もう一度</b>同じ届出をする</li>
+    <li>上の子が22歳の年度末を過ぎたら、自動的に数から外れる（手当が下がるのは制度どおり）</li>
+  </ol>
+</section>
+
+<footer>
+  <div><b>出典</b></div>
+  <div>・<a href="https://www.cfa.go.jp/policies/kokoseido/jidouteate/mottoouen" target="_blank" rel="noopener">もっと子育て応援！児童手当（こども家庭庁）</a></div>
+  <div>・<a href="https://www.gov-online.go.jp/tokusyu/jidoteate/" target="_blank" rel="noopener">2024年10月分から児童手当が大幅拡充（政府広報オンライン）</a></div>
+  <div>・<a href="https://www.pref.osaka.lg.jp/o090135/kateishien/teate/jite_202410.html" target="_blank" rel="noopener">児童手当の制度改正（拡充）（大阪府）</a></div>
+  <div style="margin-top:10px">家族向けにまとめた参考資料です。実際の手続きや金額は、お住まいの市区町村で確認してください。制度は今後変わる可能性があります。</div>
+</footer>
+</div>
+
+<script>
+(function(){
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+  /* ── 年齢の目盛り図 ── */
+  function ruler(){
+    const svg = document.getElementById('ruler');
+    const x0 = 14, x1 = 664, X = a => x0 + (x1-x0) * a/22;
+    const ink = css('--ink'), soft = css('--ink-soft'), faint = css('--ink-faint'), line = css('--line-strong');
+    const ok = css('--ok'), okSoft = css('--ok-soft'), old = css('--s-old'), warn = css('--warn');
+    let o = '';
+    const rows = [
+      { y: 44,  label: '手当がもらえる', sub:'改正後', from:0, to:18, col: ok,  txt:'0歳〜高校生（18歳の年度末）' },
+      { y: 114, label: '人数に数える', sub:'改正前', from:0, to:18, col: old, txt:'高校卒業で外れる' },
+      { y: 184, label: '人数に数える', sub:'改正後', from:0, to:22, col: ok,  txt:'22歳の年度末まで（届出が必要）' }
+    ];
+    rows.forEach(r=>{
+      // 見出しはバーの上に置く（左に置くとスマホで切れる）
+      o += '<text x="'+x0+'" y="'+(r.y-16)+'" font-size="17" font-weight="700" fill="'+ink+'">'+r.label
+        + '<tspan font-size="15" font-weight="400" fill="'+soft+'">（'+r.sub+'）</tspan></text>';
+      o += '<rect x="'+X(r.from)+'" y="'+(r.y-8)+'" width="'+(X(r.to)-X(r.from))+'" height="30" rx="7" fill="'+r.col+'" opacity=".92"/>';
+      o += '<text x="'+(X(r.from)+12)+'" y="'+(r.y+12)+'" font-size="16" font-weight="700" fill="#fff">'+r.txt+'</text>';
+    });
+    // 改正で広がった部分を強調
+    o += '<rect x="'+X(18)+'" y="172" width="'+(X(22)-X(18))+'" height="38" rx="8" fill="none" stroke="'+warn+'" stroke-width="2.5" stroke-dasharray="5 4"/>';
+    o += '<text x="'+((X(18)+X(22))/2)+'" y="228" font-size="15" font-weight="700" fill="'+warn+'" text-anchor="middle">ここが増えた</text>';
+    // 目盛り
+    [0,6,12,15,18,22].forEach(a=>{
+      o += '<line x1="'+X(a)+'" y1="246" x2="'+X(a)+'" y2="254" stroke="'+line+'"/>';
+      o += '<text x="'+X(a)+'" y="273" font-size="15" fill="'+faint+'" text-anchor="middle">'+a+'歳</text>';
+    });
+    o += '<line x1="'+x0+'" y1="246" x2="'+x1+'" y2="246" stroke="'+line+'"/>';
+    svg.innerHTML = o;
+  }
+
+  /* ── 例の家庭の計算 ── */
+  const KIDS = [2014, 2016, 2023];               // 生まれた年度（今 12歳・10歳・3歳）
+  function oldRule(fy){                            // 改正前：中学生まで／第3子は小学生まで1.5万／数えるのは18歳年度末まで
+    const c = KIDS.filter(b => fy>=b && fy<=b+18); let t = 0;
+    KIDS.forEach(b=>{ const a = fy-b; if(a<0 || a>15) return;
+      const o = c.indexOf(b)+1;
+      t += (a<=2 ? 15000 : (a<=12 && o>=3 ? 15000 : 10000)) * 12; });
+    return t;
+  }
+  function newRule(fy, countTo){                   // 改正後：高校生まで／第3子以降3万／数えるのは countTo 歳の年度末まで
+    const c = KIDS.filter(b => fy>=b && fy<=b+countTo); let t = 0;
+    KIDS.forEach(b=>{ const a = fy-b; if(a<0 || a>18) return;
+      const o = c.indexOf(b)+1;
+      t += (o>=3 ? 30000 : (a<=2 ? 15000 : 10000)) * 12; });
+    return t;
+  }
+  const years = []; for(let y=2026; y<=2041; y++) years.push(y);
+  const S = [
+    { key:'old',  name:'もし改正がなかったら', col:'--s-old',  v: years.map(oldRule) },
+    { key:'new',  name:'改正後・届出あり',     col:'--s-new',  v: years.map(y=>newRule(y,22)) },
+    { key:'miss', name:'改正後・届出を忘れた', col:'--s-miss', v: years.map(y=>newRule(y,18)) }
+  ];
+  const sum = a => a.reduce((x,y)=>x+y,0);
+  const man = v => (v/10000).toLocaleString('ja-JP',{maximumFractionDigits:0})+'万円';
+  const T = { old: sum(S[0].v), nw: sum(S[1].v), miss: sum(S[2].v) };
+  document.getElementById('tOld').textContent = man(T.old);
+  document.getElementById('tNew').textContent = man(T.nw);
+  document.getElementById('dNew').textContent = '改正で +' + man(T.nw - T.old);
+  document.getElementById('tMiss').textContent = man(T.miss);
+  document.getElementById('dMiss').textContent = '届出なしで −' + man(T.nw - T.miss);
+
+  // 表
+  document.getElementById('dataTbl').innerHTML = '<tr><th>年度</th><th>改正前</th><th>届出あり</th><th>届出なし</th></tr>'
+    + years.map((y,i)=>'<tr><td>'+y+'</td><td class="num">'+man(S[0].v[i])+'</td><td class="num">'+man(S[1].v[i])+'</td><td class="num">'+man(S[2].v[i])+'</td></tr>').join('')
+    + '<tr><td>合計</td><td class="num">'+man(T.old)+'</td><td class="num">'+man(T.nw)+'</td><td class="num">'+man(T.miss)+'</td></tr>';
+
+  /* ── 我が家の場合（リンクの # に名前があるときだけ）──
+     例：…/jidoteate-guide/#k=長男,長女,末っ子 。# 以降はサーバーに送られないので、名前はどこにも保存されない。 */
+  (function mine(){
+    const raw = decodeURIComponent((location.hash||'').replace(/^#/, '').replace(/^k=/, ''));
+    const names = raw.split(/[,、，]/).map(s=>s.trim()).filter(Boolean).slice(0,3);
+    if(names.length < 3) return;
+    const esc = s => s.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const N = names.map(esc);
+    const sec = document.getElementById('mine'); sec.hidden = false;
+    document.getElementById('mineTitle').innerHTML = '我が家の場合<span style="white-space:nowrap">（' + N.join('・') + '）</span>';
+
+    const grade = (fy, b) => { const a = fy-b;
+      if(a<=3) return a+'歳'; if(a<=6) return ['年少','年中','年長'][a-4];
+      if(a<=12) return '小'+(a-6); if(a<=15) return '中'+(a-12); if(a<=18) return '高'+(a-15);
+      if(a<=22) return '大'+(a-18); return '社会人'; };
+    const monthly = (fy, idx, countTo) => {          // その子の月額
+      const b = KIDS[idx], a = fy-b; if(a<0 || a>18) return 0;
+      const c = KIDS.filter(x => fy>=x && fy<=x+countTo);
+      const o = c.indexOf(b)+1;
+      return o>=3 ? 30000 : (a<=2 ? 15000 : 10000);
+    };
+    const now = (()=>{ const d=new Date(); return d.getMonth()>=3 ? d.getFullYear() : d.getFullYear()-1; })();
+    const ys = years.filter(y=>y>=now);
+    const total = ys.reduce((t,y)=>t + [0,1,2].reduce((s,i)=>s+monthly(y,i,22)*12,0), 0);
+    const miss  = ys.reduce((t,y)=>t + [0,1,2].reduce((s,i)=>s+monthly(y,i,18)*12,0), 0);
+    const nowM = [0,1,2].reduce((s,i)=>s+monthly(now,i,22),0);
+    document.getElementById('mTotal').textContent = man(total);
+    document.getElementById('mTotalSub').textContent = now+'〜'+ys[ys.length-1]+'年度';
+    document.getElementById('mNow').textContent = (nowM/10000).toLocaleString('ja-JP')+'万円';
+    document.getElementById('mNowSub').textContent = [0,1,2].map(i=>names[i]+' '+(monthly(now,i,22)/10000)+'万').join('・');
+    document.getElementById('mMiss').textContent = '−' + man(total - miss);
+
+    // 色：1色の濃淡（金額が多いほど濃い）
+    const shade = m => m>=30000 ? 88 : m>=15000 ? 45 : m>=10000 ? 30 : 0;
+    const cell = (m, g, y) => {
+      const p = shade(m), bg = p ? 'color-mix(in srgb, var(--s-new) '+p+'%, var(--surface))' : 'transparent';
+      const fg = p>=80 ? '#fff' : 'var(--ink)';
+      return '<td class="c'+(y===now?' now':'')+'" style="background:'+bg+';color:'+fg+'"><span class="m">'+(m? (m/10000).toLocaleString('ja-JP') : '—')+'</span><span class="g">'+g+'</span></td>';
+    };
+    let h = '<tr><th>年度</th>' + ys.map(y=>'<th'+(y===now?' class="now"':'')+'>'+y+'</th>').join('') + '</tr>';
+    [0,1,2].forEach(i=>{
+      h += '<tr><td>'+N[i]+'</td>' + ys.map(y=>cell(monthly(y,i,22), grade(y,KIDS[i]), y)).join('') + '</tr>';
+    });
+    h += '<tr class="tot"><td>年額</td>' + ys.map(y=>'<td class="num">'+(([0,1,2].reduce((s,i)=>s+monthly(y,i,22),0)*12/10000).toLocaleString('ja-JP'))+'万</td>').join('') + '</tr>';
+    document.getElementById('heat').innerHTML = h;
+
+    document.getElementById('mineSteps').innerHTML = [
+      '<b>2033年3月</b>（'+N[0]+'が高校を卒業）… 市役所に届出。出せば'+N[2]+'の<b>月3万円がそのまま</b>',
+      '<b>2035年3月</b>（'+N[1]+'が高校を卒業）… <b>もう一度</b>届出',
+      '<b>2037年4月</b>（'+N[0]+'が22歳の年度末を過ぎる）… '+N[2]+'は月1万円に（制度どおり・手続き不要）',
+      '<b>2042年3月</b>（'+N[2]+'が高校を卒業）… 児童手当が終わる'
+    ].map(t=>'<li>'+t+'</li>').join('');
+  })();
+
+  /* ── 階段状の折れ線（1つの軸・3系列） ── */
+  const svg = document.getElementById('chart'), tip = document.getElementById('tip');
+  let geo = null;
+  function chart(){
+    const W = svg.clientWidth || 600, H = 300;
+    svg.setAttribute('viewBox', '0 0 '+W+' '+H);
+    const L = 46, R = W < 420 ? 12 : 18, Tp = 16, B = 34;
+    const n = years.length, vmax = 700000;
+    const X = i => L + (W-L-R) * i/(n);            // 各年度は [i, i+1) の幅
+    const Y = v => Tp + (H-Tp-B) * (1 - v/vmax);
+    const grid = css('--grid'), faint = css('--ink-faint'), surf = css('--surface');
+    let o = '';
+    [0,200000,400000,600000].forEach(v=>{
+      o += '<line x1="'+L+'" y1="'+Y(v)+'" x2="'+(W-R)+'" y2="'+Y(v)+'" stroke="'+grid+'"/>';
+      o += '<text x="'+(L-6)+'" y="'+(Y(v)+4)+'" font-size="11" fill="'+faint+'" text-anchor="end">'+(v/10000)+'万</text>';
+    });
+    years.forEach((y,i)=>{
+      if(i%(W<420?3:2)===0) o += '<text x="'+(X(i)+(X(1)-X(0))/2)+'" y="'+(H-12)+'" font-size="11" fill="'+faint+'" text-anchor="middle">'+y+'</text>';
+    });
+    o += '<text x="'+L+'" y="'+(H-0)+'" font-size="10" fill="'+faint+'">年度</text>';
+    // 系列（下に隠れないよう、届出なし→改正前→届出あり の順に描く）
+    const order = [2,0,1], off = {0:0, 1:0, 2:0};
+    order.forEach(k=>{
+      const s = S[k], col = css(s.col);
+      let d = '';
+      s.v.forEach((v,i)=>{
+        const yv = Y(v) + (k===2 && v===S[1].v[i] ? 3 : 0) + (k===0 && v===S[1].v[i] ? -3 : 0);
+        d += (i ? 'L'+X(i)+' '+yv : 'M'+X(0)+' '+yv) + ' L'+X(i+1)+' '+yv+' ';
+      });
+      o += '<path d="'+d+'" fill="none" stroke="'+surf+'" stroke-width="6" stroke-linejoin="round"/>';
+      o += '<path d="'+d+'" fill="none" stroke="'+col+'" stroke-width="2.5" stroke-linejoin="round"/>';
+    });
+    // 届出を忘れると損をする区間の注記
+    const i0 = years.indexOf(2033), i1 = years.indexOf(2036)+1;
+    o += '<rect x="'+X(i0)+'" y="'+Tp+'" width="'+(X(i1)-X(i0))+'" height="'+(H-Tp-B)+'" fill="'+css('--s-miss')+'" opacity=".07"/>';
+    o += '<line id="cx" x1="0" y1="'+Tp+'" x2="0" y2="'+(H-B)+'" stroke="'+css('--ink-faint')+'" stroke-dasharray="3 3" style="display:none"/>';
+    svg.innerHTML = o;
+    geo = { X, n, L, R, W };
+  }
+  function hover(ev){
+    if(!geo) return;
+    const r = svg.getBoundingClientRect();
+    const px = (ev.touches ? ev.touches[0].clientX : ev.clientX) - r.left;
+    const x = px * geo.W / r.width;
+    let i = Math.floor((x - geo.L) / ((geo.W - geo.L - geo.R)/geo.n));
+    if(i < 0 || i >= geo.n){ hide(); return; }
+    const cx = svg.querySelector('#cx'), mid = geo.X(i) + (geo.X(1)-geo.X(0))/2;
+    cx.setAttribute('x1', mid); cx.setAttribute('x2', mid); cx.style.display = '';
+    tip.innerHTML = '<b>'+years[i]+'年度</b>' + S.map(s=>'<div class="r"><i style="background:'+css(s.col)+'"></i>'+s.name+'：<b class="num">'+man(s.v[i])+'</b></div>').join('');
+    tip.style.display = 'block';
+    const cw = svg.parentElement.clientWidth, tw = tip.offsetWidth;
+    const left = (mid * r.width / geo.W) + 8 + 8;
+    tip.style.left = Math.max(6, Math.min(cw - tw - 6, left)) + 'px';
+    tip.style.top = '40px';
+  }
+  function hide(){ tip.style.display = 'none'; const cx = svg.querySelector('#cx'); if(cx) cx.style.display = 'none'; }
+  svg.addEventListener('pointermove', hover);
+  svg.addEventListener('pointerdown', hover);
+  svg.addEventListener('pointerleave', hide);
+
+  function draw(){ ruler(); chart(); }
+  draw();
+  let t; window.addEventListener('resize', ()=>{ clearTimeout(t); t = setTimeout(draw, 150); });
+  if(window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', draw);
+})();
+</script>
+</body>
+</html>
