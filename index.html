@@ -148,6 +148,12 @@ details .tbl td{text-align:right;padding:6px 6px}
 .heat tr.tot td:first-child{background:var(--surface-2)}
 .heat col.now, .heat td.now, .heat th.now{outline:2px solid var(--accent);outline-offset:-2px}
 
+/* 公式文の引用 */
+.quote{margin:0;background:var(--surface-2);border-left:4px solid var(--ok);border-radius:0 12px 12px 0;padding:12px 14px 10px}
+.quote .qh{font-weight:700;margin-bottom:6px}
+.quote p{margin:0 0 8px;line-height:1.85}
+.quote cite{display:block;font-style:normal;font-size:.78rem;color:var(--ink-faint);margin-top:4px}
+
 /* faq */
 .faq{display:flex;flex-direction:column;gap:10px}
 .qa{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
@@ -197,6 +203,17 @@ footer a{color:var(--ink-soft)}
   <p class="note">マスの数字は<b>1か月あたりの金額（万円）</b>。色が濃いほど多い。下の小さい字はその年度の学年（「2→3歳」はその年度中に3歳になるという意味）。<br>表は横にスクロールできます。</p>
   <h3 style="font-size:1.05rem;margin:22px 0 8px">忘れてはいけない日</h3>
   <ol class="steps" id="mineSteps"></ol>
+
+  <h3 style="font-size:1.05rem;margin:22px 0 8px">市の公式の案内（そのまま引用）</h3>
+  <blockquote class="quote">
+    <div class="qh">監護相当・生計費負担についての確認書</div>
+    <p>令和6年10月の児童手当制度改正に伴う多子加算を受ける場合、大学生年代の児童を養育されている方は、「監護相当・生計費負担についての確認書」、「額改定認定請求書・額改定届」の提出が必要です。</p>
+    <p>申請がない場合は、多子加算対象外になります。（第3子以降の児童手当の金額が変わります。）</p>
+    <p>※大学生年代の児童については、養子縁組の有無を問いません。<br>※申請した翌月分から適用されます。</p>
+    <cite>出典：<a href="https://www.city.itami.lg.jp/SOSIKI/KENKOFUKUSHI/KODOMOF/KOSODATE_TEATE/1553475399729.html" target="_blank" rel="noopener">伊丹市「児童手当について」</a>（2026年9月1日更新）</cite>
+  </blockquote>
+  <p class="note">書類：<a href="https://www.city.itami.lg.jp/material/files/group/115/kanngosoutou_kakuninnsho.pdf" target="_blank" rel="noopener">監護相当・生計費負担についての確認書（PDF）</a>／<a href="https://www.city.itami.lg.jp/material/files/group/115/kangosoutou.pdf" target="_blank" rel="noopener">記入例（PDF）</a><br>
+  県外で一人暮らしをしていても、学費や仕送りなど<b>生活費の一部を親が出していれば対象</b>です。仕送りは銀行振込にして記録を残しておくと安心です。</p>
 </section>
 
 <section>
